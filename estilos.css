@@ -1,0 +1,43 @@
+#formu {
+    border-radius: 1em;
+    height: 527px;
+    width: 300px;
+   text-align: center;
+    margin: auto;
+    position: block;
+    top: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif color rgb(255, 255, 255); 
+    background-color:transparent black;
+}
+
+#area{
+    background: linear-gradient(35deg, #bcf5ff, #bdeaff, #4d4d8d);
+    background-size: 400%, 400%;
+    
+ 
+}
+#formu1 {
+  
+    height: 350PX;
+    width: 365px;
+    margin: auto;
+    position: block;
+    top: 90px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  rgb(255, 255, 255) ;
+    background-color:transparent;
+
+}
+
+#titulo {
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif color rgb(255, 255, 255); 
+font-size: 35px;
+}
+
+#icon {
+    
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}

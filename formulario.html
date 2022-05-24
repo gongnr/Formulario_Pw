@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/33b8c8b384.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="area">
+<i id="icon" class="fa-solid fa-clipboard-list"></i>
+
+<form action="" method="get">
+    <fieldset id="formu">
+        <fieldset>
+        <b><legend> Dados Pessoais</legend></b>
+        <br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="Nome" id="nome" placeholder= "Digite seu nome" required><br><br>
+        <label for="data">Data de nascimento:</label>
+        <input type="date" date="date" id="data" placeholder= "Digite sua data de nascimento" required>
+        <label for="email">E-mail:</label> 
+        <input type="text" email="email" id="email" placeholder= "Digite seu E-mail" required>
+        <label for="telefone">Telefone:</label>
+        <input type="text" telefone="telefone" id="telefone" placeholder= "Digite seu Telefone" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <b><legend>Dados Acadêmicos</legend> </b>
+            <label for="curso">Curso:</label>
+                <select id="curso" name ="curso" >
+                <option value="ads">ADS</option>
+                <option value="gti">GTI</option>
+                <option value="tbd">TBD</option>
+                <option value="tsi">TSI</option>
+                </select>
+            <label for="periodo">Semestre</label> 
+                <input type="radio" name="semestre" id="periodo"></label>1°</label>
+                <input type="radio" name="semestre" id="periodo"></label>2°</label>
+                <input type="radio" name="semestre" id="periodo"></label>3°</label>
+                <input type="radio" name="semestre" id="periodo"></label>4°</label>
+                <input type="radio" name="semestre" id="periodo"></label>5°</label>
+            <br>
+        </fieldset>
+            <br>
+        <fieldset>
+            <b><legend>Experiência profissional</legend></b> <br>
+            <label for="">Trabalha?</label> <input type="checkbox"> 
+            <label for="local">Local de trabalho:</label> <input type="text" id="local"><br>
+            <label for="experiencia">Descreva sua experiência:</label>
+            <br><br>
+            <textarea id="experiencia"></textarea>
+            <br>
+            <input type="submit" value="Gravar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </fieldset>
+</form>
+</body>
+</html>
