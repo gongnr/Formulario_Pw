@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item II</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
-<body>
-    <header>
+<body id="index">
+    <header class="body">
         <h2>Participante(s) do Grupo</h2>
-        <ul>
-            <li>Eduarda Veronica De Jesus (TSI-M-01.22)</li>
-            <li>Filipe Reis Teixeira (TCD-M-01.22)</li>
-            <li>Sérgio Paulo Gontijo - TCD-M-01.22</li>
-        </ul>
+        <div class="flex-container">
+            <div>Eduarda Veronica De Jesus (TSI-M-01.22)</div>
+            <div>Filipe Reis Teixeira (TCD-M-01.22)</div>
+            <div>Sérgio Paulo Gontijo - TCD-M-01.22</div>
+        </div>
     </header>
-    <section>
+    <section class="body">
         <h2>Questões Respondidas</h2>
         <ol type="a">
             <li>Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?</li>
@@ -45,19 +46,28 @@
                     <li>O atributo selected na tag &lt;option&gt; indica que uma opção está selecionada inicialmente.</li>
                 </ul>
             <li>Nas tags de formulário, para que serve o atributo "required"?</li>
-                <ul>Em em um elemento de formulário que tenha recebido o atributo "required", seu preenchimento torna-se obrigatório antes da submissão do formulário.</ul>
+                <ul>
+                    <li>Em em um elemento de formulário que tenha recebido o atributo "required", seu preenchimento torna-se obrigatório antes da submissão do formulário.</li>
+                </ul>
             <li>Na tag &lt;form&gt;, para que serve o atributo "action"?</li>
                 <ul>
                     <li>O atributo "action" define qual ação será performada quando o formulário é submetido.</li>
                 </ul>
             <li>Na tag &lt;form&gt;, para que serve o atributo "method"?</li>
-                <ul>O atributo "method" define o método pelo qual os dados do formulário serão transmitidos. Os dados do formulário poderão ser enviados como variáveis do URL (method="get") ou como transação de postagem de HTTP (method="post"). O método padrão é "get".</ul>
-            <li>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o
-            valor do atributo "method" na tag &lt;form&gt;?</li>
+                <ul>
+                    <li>O atributo "method" define o método pelo qual os dados do formulário serão transmitidos. Os dados do formulário poderão ser enviados como variáveis do URL (method="get") ou como transação de postagem de HTTP (method="post"). O método padrão é "get".</li>
+                </ul>
+            <li>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag &lt;form&gt;?</li>
+                <ul>
+                    <li>No caso de envio de dados pessoais sensíveis inseridos em fomulários, ao atributo "method" deve ser dado o valor "post", pois os dados são anexados dentro do corpo de uma requisição HTTP. Por sua vez, utilizando-se o valor "get", os dados inseridos no formulário são visíveis na URL.</li>
+                </ul>
             <li>Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será usado para fazer upload de arquivos?</li>
+                <ul>
+                    <li>No caso, deve ser usado o valor "post", que não possui limite de tamanho e pode ser usado para envido de grandes quantidades de dados.</li>
+                </ul>
         </ol>
     </section>
-    <nav>
+    <nav id="link">
         <a href="formulario.html" target="_blank">Acessar Formulário</a>
     </nav>
 </body>

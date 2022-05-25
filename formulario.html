@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/33b8c8b384.js" crossorigin="anonymous"></script>
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body id="area">
-<i id="icon" class="fa-solid fa-clipboard-list"></i>
-
 <form action="" method="get">
     <fieldset id="formu">
         <fieldset>
-        <b><legend> Dados Pessoais</legend></b>
-        <br>
-        <label for="nome">Nome:</label>
-        <input type="text" name="Nome" id="nome" placeholder= "Digite seu nome" required><br><br>
-        <label for="data">Data de nascimento:</label>
-        <input type="date" date="date" id="data" placeholder= "Digite sua data de nascimento" required>
-        <label for="email">E-mail:</label> 
-        <input type="text" email="email" id="email" placeholder= "Digite seu E-mail" required>
-        <label for="telefone">Telefone:</label>
-        <input type="text" telefone="telefone" id="telefone" placeholder= "Digite seu Telefone" required>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder= "Digite seu nome" required >
+            </div>
+           
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                 <input type="date" date="date" id="data" placeholder= "Digite sua data de nascimento" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label> 
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" placeholder= "Digite seu E-mail" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" id="telefone" placeholder= "Digite seu Telefone" required> 
+            </div>     
         </fieldset>
-        <br>
         <fieldset>
-            <b><legend>Dados Acadêmicos</legend> </b>
+            <legend>Dados acadêmicos</legend>
             <label for="curso">Curso:</label>
                 <select id="curso" name ="curso" >
-                <option value="ads">ADS</option>
-                <option value="gti">GTI</option>
-                <option value="tbd">TBD</option>
-                <option value="tsi">TSI</option>
+                    <option value="ads">ADS</option>
+                    <option value="gti">GTI</option>
+                    <option value="tbd">TBD</option>
+                    <option value="tsi">TSI</option>
                 </select>
-            <label for="periodo">Semestre</label> 
+            <div>
+                <label for="periodo">Semestre</label> 
                 <input type="radio" name="semestre" id="periodo"></label>1°</label>
                 <input type="radio" name="semestre" id="periodo"></label>2°</label>
                 <input type="radio" name="semestre" id="periodo"></label>3°</label>
                 <input type="radio" name="semestre" id="periodo"></label>4°</label>
                 <input type="radio" name="semestre" id="periodo"></label>5°</label>
-            <br>
+            </div>
         </fieldset>
-            <br>
         <fieldset>
-            <b><legend>Experiência profissional</legend></b> <br>
-            <label for="">Trabalha?</label> <input type="checkbox"> 
-            <label for="local">Local de trabalho:</label> <input type="text" id="local"><br>
+            <legend>Experiência profissional</legend>
+            <div>
+                <label for="">Trabalha?</label>
+                <input type="checkbox">
+            </div>
+            <div id="trabalho">
+                <label for="local">Local de trabalho:</label> 
+                <input type="text" id="local">
+            </div>
             <label for="experiencia">Descreva sua experiência:</label>
-            <br><br>
-            <textarea id="experiencia"></textarea>
-            <br>
-            <input type="submit" value="Gravar">
-            <input type="reset" value="Limpar">
+            <textarea id="experiencia" rows="10" cols="30"></textarea>
         </fieldset>
     </fieldset>
+    <div id="botoes">
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar">
+    </div>
 </form>
 </body>
 </html>
